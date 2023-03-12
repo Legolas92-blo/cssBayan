@@ -1,0 +1,31 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 75vw;
+	margin: 0 auto;
+}
+
+.page-title {
+}
+.accordion {
+}
+.accordion__item {
+}
+.accordion__input {
+}
+.accordion__img {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	overflow: hidden;
+	object-fit: cover;
+}
