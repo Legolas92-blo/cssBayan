@@ -80,9 +80,15 @@ li {
 }
 
 .accordion__item:hover  .accordion__img {
-	height: 70vh;
+	height: 50vh;
 }
 
 .accordion__input:checked ~ .accordion__img{
-	height: 70vh;
+	height: 50vh;
+}
+
+.accordion__input:checked + .accordion__item-title .accordion__icon{
+	display: block;
+	background: url('./img/redHeart.svg') center no-repeat;
+	background-size: 100%;
 }
