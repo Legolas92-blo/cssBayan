@@ -47,6 +47,7 @@ li {
 	cursor: pointer;
 	font-size: 1rem;
 	line-height: 1rem;
+	color: rgba(0, 0, 255, 0.664);
 }
 .accordion__input {
 	display: block;
@@ -73,12 +74,18 @@ li {
 	transition: all 0.5s ease;
 }
 
+.accordion__item:active  .accordion__item-label .accordion__item-title{
+	color: rgba(0, 0, 255, 0.664);
+}
 
 
 .accordion__input:checked ~ .accordion__img{
 	height: 50vh;
 }
 
+.accordion__input:checked + .accordion__item-title {
+	color: rgba(0, 0, 0, 0.856);
+}
 .accordion__input:checked + .accordion__item-title .accordion__icon{
 	
 	background: url('./img/redHeart.svg') center no-repeat;
@@ -91,6 +98,10 @@ li {
 	.accordion:hover  .accordion__item .accordion__icon {
 		height: 1.5rem;
 	}
+	.accordion:hover  .accordion__item-title{
+		color: rgba(0, 0, 0, 0.856);
+	}
+	
 
 	.accordion__item:hover  .accordion__img {
 		height: 50vh;
