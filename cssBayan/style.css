@@ -2,7 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	
+	-webkit-tap-highlight-color:  transparent;
 }
 
 html,
@@ -78,6 +78,11 @@ li {
 	color: rgba(0, 0, 255, 0.664);
 }
 
+.accordion__item:active  .accordion__item-title .accordion__icon{
+	background: url('./img/blueHeart.svg') center no-repeat;
+	background-size: 100%;
+	height: 1.5rem;
+}
 
 .accordion__input:checked ~ .accordion__img{
 	height: 50vh;
@@ -87,11 +92,9 @@ li {
 	color: rgba(0, 0, 0, 0.856);
 }
 .accordion__input:checked + .accordion__item-title .accordion__icon{
-	
 	background: url('./img/redHeart.svg') center no-repeat;
 	background-size: 100%;
 	transform: rotate(180deg);
-	
 }
 
 @media (hover: hover) {
@@ -141,5 +144,11 @@ li {
 
 	.accordion__input:checked ~ .accordion__img {
 		height: 55vh;
+	}
+}
+
+@media (hover: none) {
+	.accordion__icon {
+		height: 1.5rem;
 	}
 }
